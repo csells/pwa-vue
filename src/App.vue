@@ -1,12 +1,16 @@
 <template>
-  <div id="app">
-    <header>
-      <span>Vue.js PWA</span>
-    </header>
-    <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
-      <router-view></router-view>
-    </main>
+  <div id='app'>
+    <b-navbar toggleable="md" type="dark" variant="dark" fixed="top">
+      <b-nav-toggle target="nav_collapse"></b-nav-toggle>
+      <b-navbar-brand :to="'/'">min-pwa</b-navbar-brand>
+        <b-collapse is-nav id="nav_collapse">
+          <b-nav is-nav-bar>
+            <b-nav-item :to="'/page2'">Page2</b-nav-item>
+            <b-nav-item :to="'/page3'">Page3</b-nav-item>
+          </b-nav>
+        </b-collapse>
+    </b-navbar>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -17,38 +21,15 @@ export default {
 </script>
 
 <style>
+/* show content under the nav-bar */
 body {
-  margin: 0;
+  padding-top: 3.5rem;
 }
 
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-
-main {
-  text-align: center;
-  margin-top: 40px;
-}
-
-header {
-  margin: 0;
-  height: 56px;
-  padding: 0 16px 0 24px;
-  background-color: #35495E;
-  color: #ffffff;
-}
-
-header span {
-  display: block;
-  position: relative;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: .02em;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-top: 16px;
+/* speed up the navbar menu speed */
+.collapsing {
+  -webkit-transition: height .1s ease;
+       -o-transition: height .1s ease;
+          transition: height .1s ease;
 }
 </style>
