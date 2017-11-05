@@ -2,7 +2,7 @@
   <div id='app'>
     <b-navbar toggleable="md" type="dark" variant="dark" fixed="top">
       <b-nav-toggle target="nav_collapse"></b-nav-toggle>
-      <b-navbar-brand :to="'/'">pwafoo</b-navbar-brand>
+      <b-navbar-brand :to="'/'">pwa-vue</b-navbar-brand>
         <b-collapse is-nav id="nav_collapse">
           <b-nav is-nav-bar>
             <b-nav-item :to="'/page2'">Page2</b-nav-item>

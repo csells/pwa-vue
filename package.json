@@ -1,8 +1,8 @@
 {
-  "name": "pwafoo",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "Chris Sells <csells@sellsbrothers.com>",
+  "name": "pwa-vue",
+  "version": "0.1.0",
+  "description": "A PWA Vue.js project with Bootstrap",
+  "author": "Joe Grammer <jgrammer@example.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

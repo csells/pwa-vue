@@ -1,6 +1,6 @@
-# pwafoo
+# pwa-vue
 
-> A Vue.js project
+> A PWA Vue.js project with Bootstrap
 
 ## Build Setup
 
